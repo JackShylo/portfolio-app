@@ -1,4 +1,9 @@
 import { motion } from "framer-motion";
+import MeImg from "../assets/img/Me.jpg";
+
+// Fallback image in case MeImg fails to load
+const fallbackImg = "https://via.placeholder.com/256?text=No+Image";
+
 
 const timeline = [
   {
@@ -27,6 +32,7 @@ const timeline = [
   },
 ];
 
+
 export default function About() {
   return (
     <section className="py-20 px-6 bg-gray-100 dark:bg-gray-900 text-black dark:text-white">
@@ -40,13 +46,12 @@ export default function About() {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="src/assets/img/me.jpg"
+            src={MeImg}
             alt="Jack Kelly"
             className="rounded-2xl shadow-lg w-64 md:w-full"
+            onError={e => { e.currentTarget.onerror = null; e.currentTarget.src = fallbackImg; }}
           />
         </motion.div>
-
-        {/* Right: Content */}
         <motion.div
           className="md:w-2/3 flex flex-col gap-6"
           initial={{ opacity: 0, x: 50 }}
@@ -72,7 +77,7 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Hi! I'm Jack, a web developer passionate about building beautiful,
+            Hi! I'm Jack, a 24 yeear old Web Developer & Software Engineer passionate about building beautiful,
             functional applications. I enjoy working with React, Tailwind, and
             AI-powered tools to bring ideas to life.
           </motion.p>
@@ -86,7 +91,7 @@ export default function About() {
           >
             <h3 className="text-2xl font-semibold mb-3">Skills</h3>
             <div className="flex flex-wrap gap-2">
-              {["React", "Tailwind CSS", "JavaScript", "Node.js", "AI Integration"].map(
+              {["React", "Tailwind CSS", "JavaScript", "C#", "AI Integration"].map(
                 (tech, idx) => (
                   <motion.span
                     key={idx}
@@ -108,7 +113,8 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <h3 className="text-2xl font-semibold mb-2">Fun Fact</h3>
-            <p>I love video games, hiking, and experimenting with AI-powered tools in my free time.</p>
+            <p>I love video games such as Counter-Strike 2, Rust and Pokemon VGC</p>
+            <p>I also like to build computers and code in my free time</p>
           </motion.div>
 
           {/* Timeline */}

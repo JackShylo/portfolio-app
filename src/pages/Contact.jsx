@@ -93,9 +93,8 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <p>Email: <a href="mailto:jack@example.com" className="text-indigo-600 dark:text-indigo-400 hover:underline">jack@example.com</a></p>
-          <p>GitHub: <a href="https://github.com/jack" target="_blank" rel="noopener noreferrer" className="text-indigo-600 dark:text-indigo-400 hover:underline">github.com/jack</a></p>
-          <p>LinkedIn: <a href="https://linkedin.com/in/jack" target="_blank" rel="noopener noreferrer" className="text-indigo-600 dark:text-indigo-400 hover:underline">linkedin.com/in/jack</a></p>
+          <p>Email: <a href="mailto:JackShylo@ProtonMail.com" className="text-indigo-600 dark:text-indigo-400 hover:underline">JackShylo@ProtonMail.com</a></p>
+          <p>GitHub: <a href="https://github.com/JackShylo" target="_blank" rel="noopener noreferrer" className="text-indigo-600 dark:text-indigo-400 hover:underline">github.com/JackShylo</a></p>
         </motion.div>
       </motion.div>
     </section>

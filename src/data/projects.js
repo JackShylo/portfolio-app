@@ -5,8 +5,8 @@ export const projects = [
     link: "https://github.com/JackShylo/portfolio-app",
   },
   {
-    title: "ToDo App (WIP)",
-    description: "A work in progress ToDo application using React Native.",
+    title: "Trackr App (WIP)",
+    description: "Trackr app • All in one solution for managing Tasks, Budgets & Chores • React Native",
     link: "https://github.com/JackShylo/trackr-app",
   },
 ];

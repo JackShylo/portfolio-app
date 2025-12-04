@@ -17,11 +17,11 @@ export default function Navbar() {
   return (
     <nav className="bg-white dark:bg-gray-900 shadow-md p-4 transition-colors duration-500">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-indigo-600 dark:text-indigo-400">
+        <Link to="/" className="text-2xl font-bold text-white dark:text-indigo-400">
           Portfolio
         </Link>
 
-        <div className="flex items-center space-x-6 text-lg">
+        <div className="flex items-center space-x-6 text-lg text-white">
           <Link to="/" className="hover:text-indigo-600 dark:hover:text-indigo-400">
             Home
           </Link>

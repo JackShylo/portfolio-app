@@ -3,8 +3,8 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
   return (
-    <section className="container mx-auto px-6 py-16">
-      <h2 className="text-4xl font-bold mb-10 text-gray-800 text-center">
+    <section className="py-20 px-6 bg-gray-100 dark:bg-gray-900 text-black dark:text-white min-h-screen">
+      <h2 className="text-4xl font-bold mb-10 text-white text-center">
         My Projects
       </h2>
 

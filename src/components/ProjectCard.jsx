@@ -14,7 +14,7 @@ export default function ProjectCard({ index, title, description, link, tech = []
       viewport={{ once: true }}
       transition={{ delay: index * 0.1 }}
     >
-      <h3 className="text-2xl font-semibold mb-2 group-hover:text-indigo-400 transition-colors">
+      <h3 className="text-2xl text-white font-semibold mb-2 group-hover:text-indigo-400 transition-colors">
         {title}
       </h3>
       <p className="text-gray-300 mb-4">{description}</p>
