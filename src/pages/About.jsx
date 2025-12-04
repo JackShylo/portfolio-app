@@ -2,22 +2,28 @@ import { motion } from "framer-motion";
 
 const timeline = [
   {
-    date: "2023 - Present",
-    title: "AI Content Generator",
+    date: "2019",
+    title: "Student @ Vision College",
     description:
-      "Built an AI-powered content generation tool using React, Node.js, and OpenAI API.",
+      "New Zealand Diploma in Web Development and Design (Level 5)",
   },
   {
-    date: "2022 - 2023",
+    date: "2020",
+    title: "Student @ Vision College",
+    description:
+      "New Zealand Diploma in Software Development (Level 6)",
+  },
+  {
+    date: "2022 - Present",
+    title: "Crew Trainer @ McDonald's",
+    description:
+      "Manage and train new crew members, ensuring high standards of customer service and operational efficiency.",
+  },
+  {
+    date: "2024",
     title: "Portfolio Redesign",
     description:
       "Redesigned my personal portfolio with React, Tailwind CSS, and Framer Motion.",
-  },
-  {
-    date: "2021 - 2022",
-    title: "YouTube Title & Thumbnail Tool",
-    description:
-      "Created a tool to generate optimized YouTube titles and thumbnails using AI.",
   },
 ];
 
@@ -34,7 +40,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="/me.jpg"
+            src="src/assets/img/me.jpg"
             alt="Jack Kelly"
             className="rounded-2xl shadow-lg w-64 md:w-full"
           />
