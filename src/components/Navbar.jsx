@@ -34,18 +34,6 @@ export default function Navbar() {
           <Link to="/contact" className="hover:text-indigo-600 dark:hover:text-indigo-400">
             Contact
           </Link>
-
-          {/* Dark Mode Toggle Button */}
-          <button
-            onClick={() => setDarkMode(!darkMode)}
-            className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition"
-          >
-            {darkMode ? (
-              <SunIcon className="w-5 h-5 text-yellow-400" />
-            ) : (
-              <MoonIcon className="w-5 h-5 text-gray-800" />
-            )}
-          </button>
         </div>
       </div>
     </nav>
