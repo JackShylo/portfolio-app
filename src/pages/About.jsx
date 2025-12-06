@@ -32,7 +32,7 @@ const timeline = [
 
 export default function About() {
   return (
-    <section className="py-20 px-6 bg-gray-100 dark:bg-gray-900 text-black dark:text-white">
+    <section className="py-20 px-6 bg-gray-100 dark:bg-gray-900 text-black dark:text-white min-h-screen">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Left: Image */}
         <motion.div

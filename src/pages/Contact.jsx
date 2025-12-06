@@ -59,7 +59,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-20 px-6 bg-gray-100 dark:bg-gray-900 text-black dark:text-white">
+    <section className="py-20 px-6 bg-gray-100 dark:bg-gray-900 text-black dark:text-white flex min-h-screen">
       <div className="max-w-xl mx-auto">
         <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
 
