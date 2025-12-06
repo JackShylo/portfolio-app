@@ -1,5 +1,6 @@
 import { projects } from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
+import ResumeDownload from "../components/ResumeDownload";
 
 export default function Projects() {
   return (
@@ -13,6 +14,9 @@ export default function Projects() {
           <ProjectCard key={index} {...p} />
         ))}
       </div>
+
+      <ResumeDownload />
+
     </section>
   );
 }
