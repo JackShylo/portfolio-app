@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import TypewriterGradient from "../hooks/TypewriterGradient.jsx";
 
 export default function Home() {
   return (
@@ -34,15 +35,8 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
         >
-          Hi, I'm 
-          <span
-            className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 
-                      bg-clip-text text-transparent font-extrabold animate-gradient-x ml-2"
-          >
-            Jack Shylo
-          </span>
-          <br />
-          I build modern, fast, and AI-powered web experiences.
+          Hi, I'm <TypewriterGradient /> — I build
+          modern, fast, and AI-powered web experiences.
         </motion.h1>
 
         {/* Accent line */}
