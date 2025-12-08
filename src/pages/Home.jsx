@@ -4,11 +4,11 @@ import TypewriterGradient from "../hooks/TypewriterGradient.jsx";
 
 export default function Home() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-black text-white px-6 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-800 to-black text-white px-6 overflow-hidden">
 
       {/* --- Animated Spotlight Glow --- */}
       <motion.div
-        className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-indigo-600 opacity-20 blur-[120px]"
+        className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full secondary opacity-20 blur-[120px]"
         animate={{ opacity: [0.15, 0.25, 0.15] }}
         transition={{ duration: 6, repeat: Infinity }}
       />
@@ -25,7 +25,7 @@ export default function Home() {
           transition={{ delay: 0.4 }}
           className="inline-block px-4 py-1 mb-6 rounded-full bg-gray-800/60 backdrop-blur border border-gray-700 text-sm"
         >
-          ✨ Front-End Developer & AI Builder
+          ✨ Full Stack Engineer & Generative AI Developer
         </motion.div>
 
         {/* Main heading */}

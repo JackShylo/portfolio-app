@@ -4,7 +4,7 @@ import '../App.css';
 
 export default function ResumeDownload() {
   return (
-    <section className="py-16 px-6 primary text-black dark:text-white">
+    <section className="py-16 px-6 text-black dark:text-white">
       <div className="max-w-4xl mx-auto text-center">
 
         {/* Section Header */}

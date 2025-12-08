@@ -15,9 +15,9 @@ export default function Navbar() {
   }, [darkMode]);
 
   return (
-    <nav className="secondary dark:bg-gray-900 shadow-md p-4 transition-colors duration-500 border-b-4 border-white">
+    <nav className="primary shadow-md p-4 transition-colors duration-500 border-b-2 border-transparent">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-white dark:text-indigo-400">
+        <Link to="/" className="text-2xl font-bold text-white">
           Portfolio
         </Link>
         <div className="flex items-center space-x-6 text-lg text-white">

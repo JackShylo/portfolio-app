@@ -32,22 +32,20 @@ const timeline = [
 
 export default function About() {
   return (
-    <section className="py-20 px-6 primary text-black dark:text-white min-h-screen">
+    <section className="py-20 px-6 secondary text-black dark:text-white min-h-screen">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Left: Image */}
         <motion.div
           className="md:w-1/3 flex justify-center md:justify-start"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          initial={{ opacity: 0, x: -100 }}
+          whileInView={{ opacity: 1, x: 0  }}
           transition={{ duration: 0.8 }}
         >
         </motion.div>
         <motion.div
           className="md:w-2/3 flex flex-col gap-6"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0, amount: 0.5 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           {/* Intro */}
@@ -55,7 +53,6 @@ export default function About() {
             className="text-4xl font-bold"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6 }}
           >
             About Me
@@ -65,7 +62,6 @@ export default function About() {
             className="text-lg leading-relaxed"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             Hi! I'm Jack, a 24 year old Web Developer & Software Engineer passionate about building beautiful,
@@ -77,7 +73,6 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <h3 className="text-2xl font-semibold mb-3">Skills</h3>
@@ -100,7 +95,6 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <h3 className="text-2xl font-semibold mb-2">Fun Fact</h3>
@@ -113,7 +107,6 @@ export default function About() {
             className="mt-10"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             <h3 className="text-2xl font-semibold mb-6">Experience & Projects</h3>
@@ -124,7 +117,6 @@ export default function About() {
                   className="mb-8 ml-6"
                   initial={{ opacity: 0, x: 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
                   transition={{ duration: 0.6, delay: idx * 0.2 }}
                 >
                   <span className="absolute -left-4 mt-1 w-3 h-3 bg-indigo-600 dark:bg-indigo-400 rounded-full"></span>
@@ -141,7 +133,6 @@ export default function About() {
             className="mt-4"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.6, delay: 1 }}
           >
             <Link
