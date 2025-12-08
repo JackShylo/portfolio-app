@@ -1,5 +1,5 @@
-// src/components/BentoGrid.jsx
 import { motion } from "framer-motion";
+import '../App.css';
 
 export default function ProjectCard({ index, title, description, link, tech = [] }) {
   return (
@@ -8,7 +8,7 @@ export default function ProjectCard({ index, title, description, link, tech = []
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className={`group relative bg-gray-800 p-6 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300`}
+      className={`group relative secondary p-6 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300`}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

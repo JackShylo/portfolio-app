@@ -59,65 +59,72 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-20 px-6 bg-gray-100 dark:bg-gray-900 text-black dark:text-white flex min-h-screen">
+    <section className="py-20 px-6 primary dark:bg-gray-900 text-black dark:text-white flex min-h-screen">
       <div className="max-w-xl mx-auto">
-        <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
+        <motion.div
+          className={`group relative secondary p-6 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300`}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+        >
+          <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
+          <form onSubmit={handleSubmit} className="space-y-4">
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+            {/* 🛡 Honeypot (invisible to humans) */}
+            <input
+              type="text"
+              name="botField"
+              value={form.botField}
+              onChange={handleChange}
+              className="hidden"
+              autoComplete="off"
+            />
 
-          {/* 🛡 Honeypot (invisible to humans) */}
-          <input
-            type="text"
-            name="botField"
-            value={form.botField}
-            onChange={handleChange}
-            className="hidden"
-            autoComplete="off"
-          />
+            <input
+              type="text"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              placeholder="Your Name"
+              required
+              className="w-full p-3 rounded primary border border-gray-700"
+            />
 
-          <input
-            type="text"
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            placeholder="Your Name"
-            required
-            className="w-full p-3 rounded bg-gray-800 border border-gray-700"
-          />
+            <input
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              placeholder="Your Email"
+              required
+              className="w-full p-3 rounded primary border border-gray-700"
+            />
 
-          <input
-            type="email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            placeholder="Your Email"
-            required
-            className="w-full p-3 rounded bg-gray-800 border border-gray-700"
-          />
+            <textarea
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              placeholder="Your Message"
+              rows="5"
+              required
+              className="w-full p-3 rounded primary border border-gray-700"
+            />
 
-          <textarea
-            name="message"
-            value={form.message}
-            onChange={handleChange}
-            placeholder="Your Message"
-            rows="5"
-            required
-            className="w-full p-3 rounded bg-gray-800 border border-gray-700"
-          />
+            <button
+              type="submit"
+              className="w-full py-3 bg-indigo-800 hover:bg-indigo-500 rounded-lg font-semibold"
+            >
+              Send Message
+            </button>
 
-          <button
-            type="submit"
-            className="w-full py-3 bg-indigo-600 hover:bg-indigo-500 rounded-lg font-semibold"
-          >
-            Send Message
-          </button>
-
-          {status && (
-            <p className="mt-3 text-center text-green-400 font-medium">
-              {status}
-            </p>
-          )}
-        </form>
+            {status && (
+              <p className="mt-3 text-center text-green-400 font-medium">
+                {status}
+              </p>
+            )}
+          </form>
+        </motion.div>
         {/* Optional Contact Info */}
         <motion.div
           className="mt-12 text-center flex flex-col gap-3 text-gray-700 dark:text-gray-300"
@@ -126,7 +133,7 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <p>Email: <a href="mailto:JackShylo@ProtonMail.com" className="text-indigo-600 dark:text-indigo-400 hover:underline">JackShylo@ProtonMail.com</a></p>
+          <p>Email: <a href="mailto:JackShylo@ProtonMail.com" className="text-red-400 dark:text-indigo-400 hover:underline">JackShylo@ProtonMail.com</a></p>
           <p>GitHub: <a href="https://github.com/JackShylo" target="_blank" rel="noopener noreferrer" className="text-indigo-600 dark:text-indigo-400 hover:underline">github.com/JackShylo</a></p>
         </motion.div>
       </div>

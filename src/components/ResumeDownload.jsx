@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/solid";
+import '../App.css';
 
 export default function ResumeDownload() {
   return (
-    <section className="py-16 px-6 bg-gray-100 dark:bg-gray-900 text-black dark:text-white">
+    <section className="py-16 px-6 primary text-black dark:text-white">
       <div className="max-w-4xl mx-auto text-center">
 
         {/* Section Header */}
@@ -34,7 +35,7 @@ export default function ResumeDownload() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mx-auto p-8 rounded-2xl bg-white dark:bg-gray-800 shadow-xl border border-gray-300 dark:border-gray-700 max-w-md"
+          className="mx-auto p-8 rounded-2xl secondary dark:bg-gray-800 shadow-xl border border-gray-300 dark:border-gray-700 max-w-md"
         >
           <h3 className="text-2xl font-semibold mb-3">Resume (PDF)</h3>
           <p className="text-gray-600 dark:text-gray-400 mb-6 text-sm">

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
+import '../App.css';
 
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
@@ -15,12 +15,11 @@ export default function Navbar() {
   }, [darkMode]);
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow-md p-4 transition-colors duration-500">
+    <nav className="secondary dark:bg-gray-900 shadow-md p-4 transition-colors duration-500 border-b-4 border-white">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-white dark:text-indigo-400">
           Portfolio
         </Link>
-
         <div className="flex items-center space-x-6 text-lg text-white">
           <Link to="/" className="hover:text-indigo-600 dark:hover:text-indigo-400">
             Home
