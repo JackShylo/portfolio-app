@@ -35,12 +35,12 @@ export default function ResumeDownload() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mx-auto p-8 rounded-2xl secondary dark:bg-gray-800 shadow-xl border border-gray-300 dark:border-gray-700 max-w-md"
+          className="primary mx-auto p-8 rounded-2xl dark:bg-gray-800 shadow-xl border border-gray-300 dark:border-gray-700 max-w-md"
         >
           <h3 className="text-2xl font-semibold mb-3">Resume (PDF)</h3>
-          <p className="text-gray-600 dark:text-gray-400 mb-6 text-sm">
+          {/*<p className="text-gray-600 dark:text-gray-400 mb-6 text-sm">
             Updated: 2025 — Includes education, skills, work experience & projects.
-          </p>
+          </p>*/}
 
           {/* Download button */}
           <motion.a

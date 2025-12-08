@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 export default function TypewriterGradient() {
-  const words = ["Jack Kelly", "a Software Engineer", "a Generative AI Developer"];
+  const words = ["Jack Kelly", "a Software Engineer", "an AI Developer"];
 
   const [wordIndex, setWordIndex] = useState(0);
   const [text, setText] = useState("");

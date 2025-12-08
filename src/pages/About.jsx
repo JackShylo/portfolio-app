@@ -64,7 +64,7 @@ export default function About() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Hi! I'm Jack, a 24 year old Web Developer & Software Engineer passionate about building beautiful,
+            Hi! I'm Jack Kelly, a 24 year old Full Stack Software Engineer passionate about building beautiful,
             functional applications. I enjoy working with React, Tailwind, and
             AI-powered tools to bring ideas to life.
           </motion.p>
@@ -81,7 +81,7 @@ export default function About() {
                 (tech, idx) => (
                   <motion.span
                     key={idx}
-                    className="px-3 py-1 bg-gray-300 dark:bg-gray-700 rounded-full text-sm font-medium"
+                    className="px-3 py-1 bg-gray-300 dark:bg-gray-800 rounded-full text-sm font-medium"
                     whileHover={{ scale: 1.1 }}
                   >
                     {tech}

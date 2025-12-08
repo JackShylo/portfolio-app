@@ -61,7 +61,7 @@ export default function Contact() {
   return (
     <section className="py-20 px-6 secondary dark:bg-gray-900 text-black dark:text-white flex min-h-screen">
       <motion.div
-          className={`group relative secondary p-6 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 max-w-xl mx-auto`}
+          className={`group relative primary p-6 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 max-w-xl mx-auto h-min`}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, x: 0, amount: 0.5 }}
           viewport={{ once: true }}

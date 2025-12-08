@@ -35,8 +35,17 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
         >
-          Hi, I'm <TypewriterGradient /> — I build
-          modern, fast, and AI-powered web experiences.
+         👋 Hi, I'm <TypewriterGradient />
+        </motion.h1>
+
+        {/* Main heading */}
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-5xl md:text-6xl font-bold mb-6 leading-tight"
+        >
+          I build fast and intuitive web experiences.
         </motion.h1>
 
         {/* Accent line */}
@@ -54,8 +63,8 @@ export default function Home() {
           transition={{ delay: 0.9 }}
           className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10"
         >
-          Web developer with 2+ years experience building clean, responsive UIs.  
-          Currently creating AI-driven tools and modern portfolio projects.
+          Full stack engineer with 1 year experience building clean, responsive UIs.  
+          Currently creating AI-driven sites and modern portfolio projects.
         </motion.p>
 
         {/* Buttons */}
