@@ -91,6 +91,14 @@ export default function Contact() {
           >Contact Me</motion.h2>
           <form onSubmit={handleSubmit} className="space-y-4">
 
+          <motion.text className="mb-4 block text-gray-300"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          >
+            Feel free to reach out for collaborations, inquiries, or just to say hello! I'm always open to connecting with fellow developers, AI enthusiasts, and potential clients. Let's create something amazing together!
+          </motion.text>
+
             {/* 🛡 Honeypot (invisible to humans) */}
             <motion.input
               type="text"
