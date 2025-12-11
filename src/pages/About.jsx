@@ -50,7 +50,7 @@ export default function About() {
           zIndex: 0,
         }}
       />
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
+      <div className="relative max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Left: Image */}
         <motion.div
           className="md:w-1/3 flex items-start md:justify-start"
@@ -65,7 +65,7 @@ export default function About() {
           />
         </motion.div>
         <motion.div
-          className="md:w-2/3 flex flex-col gap-6"
+          className="relative md:w-2/3 flex flex-col gap-6"
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0, amount: 0.5 }}
           transition={{ duration: 0.8, delay: 0.2 }}
