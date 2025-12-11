@@ -4,7 +4,7 @@ import '../App.css';
 
 export default function ResumeDownload() {
   return (
-    <section className="py-16 px-6 text-black dark:text-white">
+    <section className="py-16 px-6 text-white">
       <div className="max-w-4xl mx-auto text-center">
 
         {/* Section Header */}
@@ -23,7 +23,7 @@ export default function ResumeDownload() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto mb-10"
+          className="text-white max-w-xl mx-auto mb-10"
         >
           Get a clean, professional copy of my CV to review my skills, 
           experience, and past work in detail.
@@ -35,10 +35,10 @@ export default function ResumeDownload() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="primary mx-auto p-8 rounded-2xl dark:bg-gray-800 shadow-xl border border-gray-300 dark:border-gray-700 max-w-md"
+          className="primary mx-auto p-8 rounded-2xl shadow-xl max-w-md"
         >
           <h3 className="text-2xl font-semibold mb-3">Resume (PDF)</h3>
-          {/*<p className="text-gray-600 dark:text-gray-400 mb-6 text-sm">
+          {/*<p className="text-gray-600 mb-6 text-sm">
             Updated: 2025 — Includes education, skills, work experience & projects.
           </p>*/}
 

@@ -32,7 +32,7 @@ const timeline = [
 
 export default function About() {
   return (
-    <section className="py-20 px-6 secondary text-black dark:text-white min-h-screen">
+    <section className="py-20 px-6 secondary text-white min-h-screen">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Left: Image */}
         <motion.div
@@ -81,7 +81,7 @@ export default function About() {
                 (tech, idx) => (
                   <motion.span
                     key={idx}
-                    className="px-3 py-1 bg-gray-300 dark:bg-gray-800 rounded-full text-sm font-medium"
+                    className="px-3 py-1 bg-gray-700 text-white rounded-full text-sm font-medium"
                     whileHover={{ scale: 1.1 }}
                   >
                     {tech}
@@ -110,7 +110,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.8 }}
           >
             <h3 className="text-2xl font-semibold mb-6">Experience & Projects</h3>
-            <div className="relative border-l border-gray-300 dark:border-gray-700 ml-4">
+            <div className="relative border-l border-gray-300 ml-4">
               {timeline.map((item, idx) => (
                 <motion.div
                   key={idx}
@@ -119,10 +119,10 @@ export default function About() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: idx * 0.2 }}
                 >
-                  <span className="absolute -left-4 mt-1 w-3 h-3 bg-indigo-600 dark:bg-indigo-400 rounded-full"></span>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">{item.date}</p>
+                  <span className="absolute -left-4 mt-1 w-3 h-3 bg-indigo-600 rounded-full"></span>
+                  <p className="text-sm text-gray-500">{item.date}</p>
                   <h4 className="text-xl font-semibold">{item.title}</h4>
-                  <p className="text-gray-700 dark:text-gray-300">{item.description}</p>
+                  <p className="text-gray-300">{item.description}</p>
                 </motion.div>
               ))}
             </div>
