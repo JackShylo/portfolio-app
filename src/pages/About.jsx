@@ -32,7 +32,7 @@ const timeline = [
 
 export default function About() {
   return (
-    <section className="relative min-h-screen flex py-20 px-6 items-center justify-center bg-gradient-to-b from-gray-800 to-black text-white px-6 overflow-hidden">
+    <section className="relative min-h-screen flex py-20 px-6 items-center justify-center bg-gradient-to-b from-gray-800 to-black text-white overflow-hidden">
       {/* --- Animated Spotlight Glow --- */}
       <motion.div
         className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full secondary opacity-20 blur-[120px]"

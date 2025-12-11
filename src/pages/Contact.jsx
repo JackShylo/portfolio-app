@@ -59,7 +59,7 @@ export default function Contact() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-800 to-black text-white px-6 overflow-hidden">
+    <section className="relative min-h-screen flex bg-gradient-to-b from-gray-800 to-black text-white py-20 px-6 overflow-hidden">
       {/* --- Animated Spotlight Glow --- */}
       <motion.div
         className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full secondary opacity-20 blur-[120px]"
@@ -79,11 +79,16 @@ export default function Contact() {
       />
       <motion.div
           className={`group relative primary p-6 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 max-w-xl mx-auto h-min`}
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, amount: 0.5 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <motion.h2 className="text-3xl font-bold mb-6">Contact Me</motion.h2>
+          <motion.h2 
+          className="text-3xl font-bold mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          >Contact Me</motion.h2>
           <form onSubmit={handleSubmit} className="space-y-4">
 
             {/* 🛡 Honeypot (invisible to humans) */}
@@ -94,6 +99,9 @@ export default function Contact() {
               onChange={handleChange}
               className="hidden"
               autoComplete="off"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
             />
 
             <motion.input
@@ -104,6 +112,9 @@ export default function Contact() {
               placeholder="Your Name"
               required
               className="w-full p-3 rounded primary border border-gray-700"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
             />
 
             <motion.input
@@ -114,6 +125,9 @@ export default function Contact() {
               placeholder="Your Email"
               required
               className="w-full p-3 rounded primary border border-gray-700"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
             />
 
             <motion.textarea
@@ -124,11 +138,17 @@ export default function Contact() {
               rows="5"
               required
               className="w-full p-3 rounded primary border border-gray-700"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
             />
 
             <motion.button
               type="submit"
               className="w-full py-3 bg-indigo-800 hover:bg-indigo-500 rounded-lg font-semibold"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
             >
               Send Message
             </motion.button>
@@ -142,10 +162,9 @@ export default function Contact() {
         {/* Optional Contact Info */}
         <motion.div
           className="mt-12 text-center flex flex-col gap-3"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
         >
           <p>Email: <a href="mailto:JackShylo@ProtonMail.com" className="text-indigo-600 hover:underline">JackShylo@ProtonMail.com</a></p>
           <p>GitHub: <a href="https://github.com/JackShylo" target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline">github.com/JackShylo</a></p>

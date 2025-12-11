@@ -4,8 +4,14 @@ import '../App.css';
 
 export default function ResumeDownload() {
   return (
-    <section className="py-16 px-6 text-white">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="py-16 px-6 text-white opacity-100">
+      <motion.div 
+      className="max-w-4xl mx-auto text-center"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.1 }}
+      >
 
         {/* Section Header */}
         <motion.h2
@@ -54,7 +60,7 @@ export default function ResumeDownload() {
             Download PDF
           </motion.a>
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 }
