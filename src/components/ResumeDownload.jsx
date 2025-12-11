@@ -4,7 +4,7 @@ import '../App.css';
 
 export default function ResumeDownload() {
   return (
-    <section className="py-16 px-6 text-white opacity-100">
+    <section className="py-16 px-6 text-white opacity-100 relative">
       <motion.div 
       className="max-w-4xl mx-auto text-center"
       initial={{ opacity: 0, y: 20 }}
