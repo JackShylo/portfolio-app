@@ -59,7 +59,24 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-20 px-6 secondary flex min-h-screen text-white">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-800 to-black text-white px-6 overflow-hidden">
+      {/* --- Animated Spotlight Glow --- */}
+      <motion.div
+        className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full secondary opacity-20 blur-[120px]"
+        animate={{ opacity: [0.15, 0.25, 0.15] }}
+        transition={{ duration: 6, repeat: Infinity }}
+      />
+      
+      <div
+        className="absolute inset-0 w-full h-full pointer-events-none"
+        style={{
+          backgroundImage: "url('/setup2.JPEG')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: 0.10,
+          zIndex: 0,
+        }}
+      />
       <motion.div
           className={`group relative primary p-6 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300 max-w-xl mx-auto h-min`}
           initial={{ opacity: 0, y: 10 }}

@@ -32,15 +32,37 @@ const timeline = [
 
 export default function About() {
   return (
-    <section className="py-20 px-6 secondary text-white min-h-screen">
+    <section className="relative min-h-screen flex py-20 px-6 items-center justify-center bg-gradient-to-b from-gray-800 to-black text-white px-6 overflow-hidden">
+      {/* --- Animated Spotlight Glow --- */}
+      <motion.div
+        className="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full secondary opacity-20 blur-[120px]"
+        animate={{ opacity: [0.15, 0.25, 0.15] }}
+        transition={{ duration: 6, repeat: Infinity }}
+      />
+      
+      <div
+        className="absolute inset-0 w-full h-full pointer-events-none"
+        style={{
+          backgroundImage: "url('/setup2.JPEG')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: 0.10,
+          zIndex: 0,
+        }}
+      />
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Left: Image */}
         <motion.div
-          className="md:w-1/3 flex justify-center md:justify-start"
+          className="md:w-1/3 flex items-start md:justify-start"
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0  }}
           transition={{ duration: 0.8 }}
         >
+          <img
+            src="/about.jpg"
+            alt="Jack Kelly"
+            className="object-contain rounded-lg shadow-lg"
+          />
         </motion.div>
         <motion.div
           className="md:w-2/3 flex flex-col gap-6"

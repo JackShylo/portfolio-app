@@ -13,8 +13,17 @@ export default function Home() {
         transition={{ duration: 6, repeat: Infinity }}
       />
 
-      {/* --- Subtle Animated Grid Background --- */}
-      <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.04] pointer-events-none"></div>
+      {/* --- Parallax Background Image --- */}
+      <div
+        className="absolute inset-0 w-full h-full pointer-events-none"
+        style={{
+          backgroundImage: "url('/setup.JPEG')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: 0.10,
+          zIndex: 0,
+        }}
+      />
 
       <div className="relative max-w-5xl text-center z-10">
 
