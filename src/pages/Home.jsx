@@ -83,7 +83,7 @@ export default function Home() {
           transition={{ delay: 1.1 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <motion.div whileHover={{ scale: 1.05, y: -2 }}>
+          <motion.div className="m-2" whileHover={{ scale: 1.05, y: -2 }}>
             <Link 
               to="/projects"
               className="px-6 py-3 rounded-xl bg-indigo-500 hover:bg-indigo-600 transition shadow-lg hover:shadow-indigo-500/30"
@@ -92,7 +92,7 @@ export default function Home() {
             </Link>
           </motion.div>
 
-          <motion.div whileHover={{ scale: 1.05, y: -2 }}>
+          <motion.div className="m-2" whileHover={{ scale: 1.05, y: -2 }}>
             <Link 
               to="/contact"
               className="px-6 py-3 rounded-xl border border-gray-600 hover:bg-gray-800 transition"
