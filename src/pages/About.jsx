@@ -58,11 +58,13 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0  }}
           transition={{ duration: 0.8 }}
         >
-          <img
-            src="/about.jpg"
-            alt="Jack Kelly"
-            className="object-contain rounded-lg shadow-lg"
-          />
+          <div className="w-40 md:w-60 lg:w-80 aspect-square">
+            <img
+              src="/about.jpg"
+              alt="about"
+              className="w-full h-full object-cover rounded-full"
+            />
+          </div>
         </motion.div>
         <motion.div
           className="relative md:w-2/3 flex flex-col gap-6"
